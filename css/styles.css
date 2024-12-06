@@ -1,0 +1,406 @@
+.lateef-regular {
+    font-family: "Lateef", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lateef-semibold {
+    font-family: "Lateef", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.lateef-bold {
+    font-family: "Lateef", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.lateef-extrabold {
+    font-family: "Lateef", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.hind-light {
+    font-family: "Hind", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.hind-regular {
+    font-family: "Hind", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hind-medium {
+    font-family: "Hind", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.hind-bold {
+    font-family: "Hind", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    background-color: #FDECF3;
+    margin: 0;
+}
+
+.gridbox {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 2fr 1.5fr 1.2fr 1.2fr 0.5fr;
+    grid-template-areas: 
+        "nav"
+        "aside"
+        "main"
+        "about"
+        "footer";
+    grid-gap: 1rem;
+}
+
+nav {
+    background-color: #E56399;
+    grid-area: nav;
+    box-shadow: 0 4px 2px -2px gray;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.nav-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1fr;
+    grid-template-areas: 
+        "space1 main-logo space3" 
+        "title title title" 
+        "home membership contact";
+    align-items: center;
+    justify-items: center;
+}
+
+.main-logo {
+    grid-area: main-logo;
+}
+
+.main-logo img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.title {
+    grid-area: title;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px #ED96BB,
+    0 0 1em #ED96BB,
+    0 0 .2em #ED96BB;
+}
+
+.space1 {
+    grid-area: space1;
+}
+
+.space3 {
+    grid-area: space3;
+}
+
+.home {
+    grid-area: home;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.4rem;
+}
+
+.home a {
+    text-decoration: none;
+    color: black;
+}
+
+.home a:hover {
+    animation: grow-highlight 0.5s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+.membership {
+    grid-area: membership;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.4rem;
+}
+
+.membership a {
+    text-decoration: none;
+    color: black;
+}
+
+.membership a:hover {
+    animation: grow-highlight 0.5s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+.contact {
+    grid-area: contact;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.4rem;
+}
+
+.contact a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact a:hover {
+    animation: grow-highlight 0.5s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+@keyframes grow-highlight {
+    0%{transform: scale(1);}
+    100%{
+        font-size: 1.5rem;
+        text-decoration: underline;
+        text-shadow: 1px 1px 2px #ED96BB,
+        0 0 1em #ED96BB,
+        0 0 .2em #ED96BB;
+    }
+}
+
+main {
+    grid-area: main;
+    margin: 10px;
+}
+
+.img-container {
+    display: flex;
+    background-color: #FDECF3;
+    height: 50vh;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img1 {
+    flex: 1;
+    background-image: url("fleximgs/group-photo.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.about-us {
+    grid-area: about;
+    background-color: #F9C8DA;
+    text-align: center;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.au-header {
+    text-shadow: 1px 1px 2px #FDECF3,
+    0 0 1em #FDECF3,
+    0 0 .2em #FDECF3;
+    font-size: 1.8rem;
+}
+
+.au-body {
+    font-size: 1.1rem;
+}
+
+aside {
+    background-color: #F9C8DA;
+    grid-area: aside;
+    margin: 10px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.aside-grid {
+    display: grid;
+    grid-template-rows: 0.02fr 0.3fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: 
+        "linea"
+        "meetings"
+        "date1"
+        "date2"
+        "date3";
+    grid-gap: 0.1rem;
+    font-size: 0.8rem; 
+}
+
+.linea {
+    grid-area: linea;
+    background-color: #E56399;
+    border-radius: 6px;
+}
+
+.meetings {
+    grid-area: meetings;
+    text-decoration: underline;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    font-size: 1rem;
+    text-shadow: 1px 1px 2px #FDECF3,
+    0 0 1em #FDECF3,
+    0 0 .2em #FDECF3;
+}
+
+.date1 {
+    grid-area: date1;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.date1 h3, .date2 h3, .date3 h3 {
+    font-size: 1.3rem;
+}
+
+.date1 p, .date2 p, .date3 p {
+    font-size: 1rem;
+}
+
+.date2 {
+    grid-area: date2;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.date3 {
+    grid-area: date3;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+
+footer {
+    background-color: #E56399;
+    grid-area: footer;
+    padding-top: 5px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.foot-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.3fr 1fr;
+    grid-template-areas: 
+    "second-logo space2 contact-info";
+}
+
+.second-logo {
+    grid-area: second-logo;
+}
+
+.second-logo img {
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.space2 {
+    grid-area: space2;
+}
+
+.contact-info {
+    grid-area: contact-info;
+}
+
+.foot-header {
+    font-size: 1.5rem;
+}
+
+.phone {
+    font-size: 1rem;
+    display: inline;
+}
+
+.email {
+    font-size: 1rem;
+    display: inline;
+}
+
+@media screen and (min-width: 768px) {
+    .gridbox{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 0.5fr 1.5fr 1.2fr 0.5fr;
+        grid-template-areas: 
+            "nav nav nav nav"
+            "aside main main main"
+            "aside about about about"
+            "footer footer footer footer";
+    }
+
+    .nav-grid{
+        grid-template-columns: 0.4fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "main-logo title space1 home membership contact";
+    }
+
+    .aside-grid{
+        grid-template-rows: 0.02fr 0.3fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: 
+        "linea"
+        "meetings"
+        "date1"
+        "date2"
+        "date3";
+    }
+
+    .foot-grid {
+        grid-template-columns: 1fr 1fr 1.2fr;
+        grid-template-areas: 
+        "second-logo space2 contact-info";
+    }
+
+    .main-logo img {
+        width: 80%;
+        height: auto;
+        object-fit: contain;
+        padding-left: 10px;
+    }    
+
+    .second-logo img {
+        width: 40%;
+        height: auto;
+        object-fit: contain;
+        padding-left: 50px;
+    }
+
+    .img-container {
+        height: 70vh;
+    }
+
+    .about-us {
+        margin-right: 10px;
+    }
+
+    .main {
+        margin-right: 10px;
+    }
+
+    .aside {
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,354 @@
+.lateef-extralight {
+    font-family: "Lateef", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.lateef-light {
+    font-family: "Lateef", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.lateef-regular {
+    font-family: "Lateef", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lateef-medium {
+    font-family: "Lateef", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.lateef-semibold {
+    font-family: "Lateef", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.lateef-bold {
+    font-family: "Lateef", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.lateef-extrabold {
+    font-family: "Lateef", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.hind-light {
+    font-family: "Hind", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.hind-regular {
+    font-family: "Hind", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hind-medium {
+    font-family: "Hind", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.hind-semibold {
+    font-family: "Hind", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.hind-bold {
+    font-family: "Hind", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    background-color: #FDECF3;
+    margin: 0;
+}
+
+.gridbox {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.5fr 1fr 3fr 0.5fr;
+    grid-template-areas: 
+        "nav nav nav nav"
+        "cfh cfh cfh cfh"
+        "form form form form"
+        "footer footer footer footer";
+    grid-gap: 1rem;
+}
+
+nav {
+    background-color: #E56399;
+    grid-area: nav;
+    box-shadow: 0 4px 2px -2px gray;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.nav-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1fr;
+    grid-template-areas: 
+        "space1 main-logo space3" 
+        "title title title" 
+        "home membership contact";
+    align-items: center;
+    justify-items: center;
+}
+
+.main-logo {
+    grid-area: main-logo;
+}
+
+.main-logo img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.title {
+    grid-area: title;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px #ED96BB,
+    0 0 1em #ED96BB,
+    0 0 .2em #ED96BB;
+}
+
+.space1 {
+    grid-area: space1;
+}
+
+.space3 {
+    grid-area: space3;
+}
+
+.home {
+    grid-area: home;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.4rem;
+}
+
+.home a {
+    text-decoration: none;
+    color: black;
+}
+
+.home a:hover {
+    animation: grow-highlight 0.5s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+.membership {
+    grid-area: membership;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.4rem;
+}
+
+.membership a {
+    text-decoration: none;
+    color: black;
+}
+
+.membership a:hover {
+    animation: grow-highlight 0.5s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+.contact {
+    grid-area: contact;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.4rem;
+}
+
+.contact a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact a:hover {
+    animation: grow-highlight 0.5s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+@keyframes grow-highlight {
+    0%{transform: scale(1);}
+    100%{
+        font-size: 1.5rem;
+        text-decoration: underline;
+        text-shadow: 1px 1px 2px #ED96BB,
+        0 0 1em #ED96BB,
+        0 0 .2em #ED96BB;
+    }
+}
+
+.cf-header {
+    grid-area: cfh;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    line-height: 40%;
+    text-shadow: 1px 1px 2px #F9C8DA,
+    0 0 1em #F9C8DA,
+    0 0 .2em #F9C8DA;
+}
+
+.cf-form {
+    grid-area: form;
+    justify-self: center;
+    align-self: center;
+    background-color: #F9C8DA;
+    border-radius: 8px;
+    width: 70%;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fname, .lname, .honorific, .inquiry {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px #FDECF3,
+    0 0 1em #FDECF3,
+    0 0 .2em #FDECF3;
+}
+
+textarea::placeholder {
+    font-family: "Hind", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+textarea {
+    font-family: "Hind", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.submit {
+    font-size: 1.5rem;
+    background-color: #ED96C1;
+    border: solid 2px #EE5997;
+    border-radius: 8px;
+}
+
+.submit:hover {
+    background-color: #EE5997;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+footer {
+    background-color: #E56399;
+    grid-area: footer;
+    padding-top: 5px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.foot-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.3fr 1fr;
+    grid-template-areas: 
+    "second-logo space2 contact-info";
+}
+
+.second-logo {
+    grid-area: second-logo;
+}
+
+.second-logo img {
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+    padding-left: 50px;
+    padding-top: 10px;
+
+}
+
+.space2 {
+    grid-area: space2;
+}
+
+.contact-info {
+    grid-area: contact-info;
+}
+
+.foot-header {
+    font-size: 1.5rem;
+}
+
+.phone {
+    font-size: 1rem;
+    display: inline;
+}
+
+.email {
+    font-size: 1rem;
+    display: inline;
+}
+
+@media screen and (min-width: 768px) {
+    .gridbox {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 0.5fr 1fr 3fr 0.5fr;
+        grid-template-areas: 
+        "nav nav nav nav"
+        "cfh cfh cfh cfh"
+        "form form form form"
+        "footer footer footer footer";
+        grid-gap: 1rem;
+    }
+
+    .nav-grid {
+        grid-template-columns: 0.4fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "main-logo title space1 home membership contact";
+    }
+
+    .foot-grid {
+        grid-template-columns: 1fr 1fr 1.2fr;
+        grid-template-areas: 
+        "second-logo space2 contact-info";
+    }
+
+    .main-logo img {
+        width: 80%;
+        height: auto;
+        object-fit: contain;
+        padding-left: 10px;
+    }    
+
+    .second-logo img {
+        width: 40%;
+        height: auto;
+        object-fit: contain;
+        padding-left: 50px;
+    }
+
+    .cf-form {
+        width: 50%;
+    }
+}

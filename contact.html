@@ -5,7 +5,7 @@
         <meta name="viewport" 
         content="width=device-width, initial-scale=1.0">
         <title>NSBWM at UNC</title>
-        <link href="css/styles.css" rel="stylesheet">
+        <link href="css/styles3.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -27,35 +27,42 @@
                 <div class="membership lateef-semibold"><a href="membership.html">MEMBERSHIP</a></div>
                 <div class="contact lateef-semibold"><a href="contact.html">CONTACT</a></div>
             </nav>
-            <main class="img-container">
-                <div class="img1"></div>
-            </main>
-            <div class="about-us">
-                <h2 class="au-header lateef-bold">About Us!</h2>
-                <p class="au-body hind-light">The National Society of Black Women in Medicine is a multi-disciplined national organization 
-                    founded on October 14th, 2017. The UNC Chapel Hill Chapter was founded in October of 2024. Our mission is to increase 
-                    the recruitment and retention of Black women in Medicine and STEM, while uplifting those already in those spaces. </p>
+
+            <div class="cf-header">
+                <div class="cf-title lateef-semibold"><h1>Contact Form</h1></div>
+                <div class="cf-disc lateef-regular"><h2>Please direct all inquiries here!</h2></div>
             </div>
-            <aside class="aside-grid">
-                <div class="linea"></div>
-                <div class="meetings figtree-bold">
-                    <h2 class="lateef-bold">Upcoming Meetings</h2>
-                </div>
-                <div class="date1">
-                    <h3 class="lateef-bold">January 13th, 2025</h3>
-                    <p class="hind-light">6:00 pm to 7:15 pm in Phillips Hall 0367. Join us for a pre-health student panel!</p>
-                </div>
-                <div class="date2">
-                    <h3 class="lateef-bold">January 29th, 2025</h3>
-                    <p class="hind-light">6:00 pm to 7:15 pm in Phillips Hall 0367. Join us for a CPR/AED certification workshop. 
-                        Due paying members only!</p>
-                </div>
-                <div class="date3">
-                    <h3 class="lateef-bold">February 3rd, 2025</h3>
-                    <p class="hind-light">6:00 pm to 7:15 pm in Phillips Hall 0367. Join us for a black women mental health panel with our 
-                        guest speaker Dr. Maureen Gupton!</p>
-                </div>
-            </aside>
+            <div class="cf-form">
+                <form>
+                    <label for="fname" class="fname lateef-regular">First Name</label><br>
+                    <input type="text" id="fname" name="fname" class="hind-light"><br>
+                    <label for="lname" class="lname lateef-regular">Last Name</label><br>
+                    <input type="text" id="lname" name="lname" class="hind-light"><br>
+                    <fieldset>
+                        <legend class="honorific lateef-regular">Honorific</legend>
+                        <label class="hind-light">
+                            <input type="radio" id="Mr" name="Honorific">
+                            Mr
+                        </label><br>
+                        <label class="hind-light">
+                            <input type="radio" id="Ms" name="Honorific">
+                            Ms
+                        </label><br>
+                        <label class="hind-light">
+                            <input type="radio" id="Mrs" name="Honorific">
+                            Mrs
+                        </label><br>
+                        <label class="hind-light">
+                            <input type="radio" id="Dr" name="Honorific">
+                            Dr
+                        </label><br>
+                    </fieldset>
+                    <label for="inquiries" class="inquiry lateef-regular">Reason for Inquiry</label><br>
+                    <textarea id="inquiries" name="inquiries" rows="10" cols="40" placeholder="Enter your inquiries here"></textarea><br>
+                    <button type="submit" class="submit lateef-semibold">SUBMIT</button>
+                </form>
+            </div>
+
             <footer class="foot-grid">
                 <div class="second-logo">
                     <a href="index.html"><img src="images/secondary_logo.png" alt="secondary NSBWM logo to take you to home page."></a>

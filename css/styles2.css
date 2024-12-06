@@ -1,0 +1,609 @@
+.lateef-semibold {
+    font-family: "Lateef", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.lateef-bold {
+    font-family: "Lateef", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.lateef-extrabold {
+    font-family: "Lateef", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.hind-light {
+    font-family: "Hind", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.hind-medium {
+    font-family: "Hind", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    background-color: #FDECF3;
+    margin: 0;
+}
+
+.gridbox {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 2fr 0.5fr 3fr 0.5fr 1fr 1fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "nav"
+        "moe-t"
+        "moe"
+        "wtju-t"
+        "memimg"
+        "memsmust"
+        "con-button"
+        "footer";
+    grid-gap: 1rem;
+}
+
+nav {
+    background-color: #E56399;
+    grid-area: nav;
+    box-shadow: 0 4px 2px -2px gray;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.nav-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1fr;
+    grid-template-areas: 
+        "space1 main-logo space3" 
+        "title title title" 
+        "home membership contact";
+    align-items: center;
+    justify-items: center;
+}
+
+.main-logo {
+    grid-area: main-logo;
+}
+
+.main-logo img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.title {
+    grid-area: title;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px #ED96BB,
+    0 0 1em #ED96BB,
+    0 0 .2em #ED96BB;
+}
+
+.space1 {
+    grid-area: space1;
+}
+
+.space3 {
+    grid-area: space3;
+}
+
+.home {
+    grid-area: home;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.4rem;
+}
+
+.home a {
+    text-decoration: none;
+    color: black;
+}
+
+.home a:hover {
+    animation: grow-highlight 0.5s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+.membership {
+    grid-area: membership;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.4rem;
+}
+
+.membership a {
+    text-decoration: none;
+    color: black;
+}
+
+.membership a:hover {
+    animation: grow-highlight 0.5s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+.contact {
+    grid-area: contact;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.4rem;
+}
+
+.contact a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact a:hover {
+    animation: grow-highlight 0.5s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+@keyframes grow-highlight {
+    0%{transform: scale(1);}
+    100%{
+        font-size: 1.5rem;
+        text-decoration: underline;
+        text-shadow: 1px 1px 2px #ED96BB,
+        0 0 1em #ED96BB,
+        0 0 .2em #ED96BB;
+    }
+}
+
+.moe-title {
+    grid-area: moe-t;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    text-shadow: 1px 1px 2px #F9C8DA,
+    0 0 1em #F9C8DA,
+    0 0 .2em #F9C8DA;
+    font-size: 2rem;
+}
+
+.moe-img-container {
+    grid-area: moe;
+    display: grid;
+    grid-template-rows: 9(1fr);
+    grid-template-areas: 
+    "moe1"
+    "moe2"
+    "moe3"
+    "moe4"
+    "moe5"
+    "moe6"
+    "moe7"
+    "moe8"
+    "moe9";
+}
+
+.moe1 h3, .moe2 h3, .moe3 h3, .moe4 h3, .moe5 h3, .moe6 h3, .moe7 h3, .moe8 h3, .moe9 h3 {
+    font-family: "Lateef", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px #F9C8DA,
+    0 0 1em #F9C8DA,
+    0 0 .2em #F9C8DA;
+}
+
+.moe1 p, .moe2 p, .moe3 p, .moe4 p, .moe5 p, .moe6 p, .moe7 p, .moe8 p, .moe9 p {
+    font-family: "Hind", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.moe1,.moe2, .moe3, .moe4, .moe5, .moe6, .moe7, .moe8, .moe9 {
+    margin-bottom: 10px;
+}
+
+.moe1:hover, .moe2:hover, .moe3:hover, .moe4:hover, .moe5:hover, .moe6:hover, .moe7:hover, .moe8:hover, .moe9:hover {
+    animation: grow 0.5s;
+    animation-fill-mode: forwards;
+    cursor: default;
+}
+
+.moe1 {
+    grid-area: moe1;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    background-color: #FDECF3;
+    border-radius: 8px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.moeimg1 {
+    flex: 1;
+    height: 40vh;
+    background-image: url("fleximgs/2425-exec-photos/qj.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.moe2 {
+    grid-area: moe2;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    background-color: #FDECF3;
+    border-radius: 8px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.moeimg2 {
+    flex: 1;
+    height: 40vh;
+    background-image: url("fleximgs/2425-exec-photos/ab.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    border-radius: 8px;
+}
+
+.moe3 {
+    grid-area: moe3;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    background-color: #FDECF3;
+    border-radius: 8px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.moeimg3 {
+    flex: 1;
+    height: 40vh;
+    background-image: url("fleximgs/2425-exec-photos/ea.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px; 
+}
+
+.moe4 {
+    grid-area: moe4;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    background-color: #FDECF3;
+    border-radius: 8px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.moeimg4 {
+    flex: 1;
+    height: 40vh;
+    background-image: url("fleximgs/2425-exec-photos/rc.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    border-radius: 8px; 
+}
+
+.moe5 {
+    grid-area: moe5;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    background-color: #FDECF3;
+    border-radius: 8px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.moeimg5 {
+    flex: 1;
+    height: 40vh;
+    background-image: url("fleximgs/2425-exec-photos/sb.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px; 
+}
+
+.moe6 {
+    grid-area: moe6;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    background-color: #FDECF3;
+    border-radius: 8px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.moeimg6 {
+    flex: 1;
+    height: 40vh;
+    background-image: url("fleximgs/2425-exec-photos/ny.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    border-radius: 8px; 
+}
+
+.moe7 {
+    grid-area: moe7;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    background-color: #FDECF3;
+    border-radius: 8px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.moeimg7 {
+    flex: 1;
+    height: 40vh;
+    background-image: url("fleximgs/2425-exec-photos/sm.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    border-radius: 8px; 
+}
+
+.moe8 {
+    grid-area: moe8;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    background-color: #FDECF3;
+    border-radius: 8px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.moeimg8 {
+    flex: 1;
+    height: 40vh;
+    background-image: url("fleximgs/2425-exec-photos/ct.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px; 
+}
+
+.moe9 {
+    grid-area: moe9;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    background-color: #FDECF3;
+    border-radius: 8px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.moeimg9 {
+    flex: 1;
+    height: 40vh;
+    background-image: url("fleximgs/2425-exec-photos/kp.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px; 
+}
+
+.wtju-title {
+    grid-area: wtju-t;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    text-shadow: 1px 1px 2px #F9C8DA,
+    0 0 1em #F9C8DA,
+    0 0 .2em #F9C8DA;
+    font-size: 2rem;
+}
+
+.memimg {
+    grid-area: memimg;
+    display: flex;
+    background-color: #FDECF3;
+    height: 50vh;
+    border-radius: 8px;
+    margin-left: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img1 {
+    flex: 1;
+    background-image: url("fleximgs/mem-work.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.memsmust {
+    grid-area: memsmust;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #F9C8DA;
+}
+
+.memsmust h2 {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    text-shadow: 1px 1px 2px #FDECF3,
+    0 0 1em #FDECF3,
+    0 0 .2em #FDECF3;
+    font-size: 2rem;
+}
+
+.memsmust li {
+    font-size: 1.3rem;
+}
+
+.con-button {
+    grid-area: con-button;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px 5px 10px 5px;
+    border-radius: 8px;
+    font-size: 2rem;
+    background-color: #ee5997ff;
+    text-shadow: 1px 1px 2px #FDECF3,
+    0 0 1em #FDECF3,
+    0 0 .2em #FDECF3;
+}
+
+.con-button a {
+    text-decoration: none;
+    color: black;
+}
+
+.con-button:hover {
+    background-color: #dc2e79ff;
+    cursor: pointer;
+    animation: grow 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes grow {
+    0%{transform: scale(1);}
+    100%{transform: scale(1.1);
+    font-size: 2.1rem;}
+}
+
+footer {
+    background-color: #E56399;
+    grid-area: footer;
+    padding-top: 5px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.foot-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.3fr 1fr;
+    grid-template-areas: 
+    "second-logo space2 contact-info";
+}
+
+.second-logo {
+    grid-area: second-logo;
+}
+
+.second-logo img {
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+    padding-left: 50px;
+    padding-top: 10px;
+
+}
+
+.space2 {
+    grid-area: space2;
+}
+
+.contact-info {
+    grid-area: contact-info;
+}
+
+.foot-header {
+    font-size: 1.5rem;
+}
+
+.phone {
+    font-size: 1rem;
+    display: inline;
+}
+
+.email {
+    font-size: 1rem;
+    display: inline;
+}
+
+@media screen and (min-width: 768px) {
+    .gridbox {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 0.5fr 0.5fr 3fr 0.5fr 1fr 0.5fr 0.5fr;
+        grid-template-areas: 
+            "nav nav nav nav"
+            "moe-t moe-t moe-t moe-t"
+            "moe moe moe moe"
+            "wtju-t wtju-t wtju-t wtju-t"
+            "memimg memimg memsmust memsmust"
+            "memimg memimg con-button con-button"
+            "footer footer footer footer";
+    }
+
+    .nav-grid{
+        grid-template-columns: 0.4fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "main-logo title space1 home membership contact";
+    }
+
+    .moe-img-container {
+        grid-template-columns: 3(1fr);
+        grid-template-rows: 3(1fr);
+        grid-template-areas: 
+        "moe1 moe2 moe3"
+        "moe4 moe5 moe6"
+        "moe7 moe8 moe9";
+    }
+
+    .foot-grid {
+        grid-template-columns: 1fr 1fr 1.2fr;
+        grid-template-areas: 
+        "second-logo space2 contact-info";
+    }
+
+    .main-logo img {
+        width: 80%;
+        height: auto;
+        object-fit: contain;
+        padding-left: 10px;
+    }    
+
+    .second-logo img {
+        width: 40%;
+        height: auto;
+        object-fit: contain;
+        padding-left: 50px;
+    }
+
+    .moe1, .moe4, .moe7 {
+        width: 90%;
+    }
+
+    .moe3, .moe6, .moe9 {
+        width: 100%;
+    }
+
+    .memsmust {
+        margin-right: 10px;
+    }
+}
